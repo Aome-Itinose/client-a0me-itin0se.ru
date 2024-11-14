@@ -1,0 +1,29 @@
+.Image {
+    height: 30vmin;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    min-height: 3vh;
+
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.Image:hover{
+    cursor: pointer;
+    transform: scale(1.1) rotate(1deg) translate(5px);
+    transition: transform .5s ease;
+
+}
+
+.Image:active{
+    transform: scale(3);
+    transition: transform .2s;
+}
+
+.ProfileImageSrc{
+    height: 30vmin;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}

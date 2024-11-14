@@ -1,0 +1,32 @@
+.ProjectLink {
+    display: inline-block;
+    width: 11vmin;
+    height: 3.8vmin;
+    margin: 1.2vmin 3vmin auto auto;
+    align-content: center;
+
+    border-radius: 20px;
+
+    background-color: rgba(60, 60, 60, 0.89);
+}
+
+.ProjectLink img{
+    float: left;
+    width: 3vmin;
+    margin-left: 0.3vmin;
+    margin-top: 0.4vmin;
+    border-radius: 40px;
+}
+.ProjectLink a{
+    text-decoration: none;
+}
+
+.ProjectLink p{
+    position: relative;
+    font-family: "Inter";
+    font-size: 1.7vmin;
+    color: rgba(230, 230, 230, 1);
+    margin-top: 0.8vmin;
+    margin-left: 4vmin;
+    /*text-align: center;*/
+}

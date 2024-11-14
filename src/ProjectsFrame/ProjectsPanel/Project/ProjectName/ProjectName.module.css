@@ -1,0 +1,9 @@
+.ProjectName {
+    font-family: "Inter", serif;
+    font-size: 3.5vmin;
+
+}
+.ProjectName p{
+    margin: 1vmin 0 0 6.5vmin;
+    padding: 0;
+}

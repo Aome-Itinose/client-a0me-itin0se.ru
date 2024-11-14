@@ -1,0 +1,7 @@
+.ProjectsPanel {
+    background-color:rgba(28, 28, 28, 0.87);
+    border-radius: 25px;
+    margin: 10vh auto;
+    max-width: 80%;
+    padding: 1%;
+}

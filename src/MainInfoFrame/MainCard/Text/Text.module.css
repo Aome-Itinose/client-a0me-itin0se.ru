@@ -1,0 +1,14 @@
+.Text {
+    /* padding: 0 auto; */
+    font-family: 'Inter';
+    color: aliceblue;
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    stroke: none;
+    font-weight: lighter;
+    padding-right: 5%;
+    max-width: 90vmin;
+    
+    margin: 10% 0 5% 0;
+
+}

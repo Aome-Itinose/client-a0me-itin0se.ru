@@ -8,7 +8,7 @@ function Menu(props) {
             <Item to="/profile" text="Профиль"/>
             <Item to="/stack" text="Стек"/>
             <Item to="/projects" text="Проекты"/>
-            <Item to="/connect" text="Связь"/>
+            <Item to="/contact" text="Связь"/>
         </header>
     );
 }

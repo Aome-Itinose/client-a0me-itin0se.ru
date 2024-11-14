@@ -1,0 +1,17 @@
+.Project {
+    display: grid;
+    grid-template-columns: 27% auto;
+    grid-template-rows: 6vmin auto;
+
+    column-gap: 5vmin;
+    row-gap: 1vmin;
+
+    background-color: rgba(230, 230, 230, 1);
+    margin: 1% 1% 5vmin;
+    border-radius: 50px;
+
+}
+
+.projectContent{
+
+}

@@ -1,0 +1,9 @@
+.FullName {
+    color: white;   
+
+    font-family: 'Inter';
+    stroke: none;
+    font-size: 2.2rem;
+
+    margin: 0 0 4vmin 0;
+}

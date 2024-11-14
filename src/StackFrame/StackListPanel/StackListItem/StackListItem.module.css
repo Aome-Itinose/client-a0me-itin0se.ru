@@ -1,0 +1,73 @@
+.StackListItem {
+    height: 4vmin;
+    position: relative;
+    padding: 0 0.5vmin;
+
+    text-align: center;
+}
+.link{
+    position: relative;
+    margin: 0 1vmin;
+    padding: 0;
+    line-height: 4vmin;
+    font-family: "Inter";
+    color: azure;
+    font-size: 2vmin;
+    text-decoration: none;
+}
+
+.StackListItem:hover{
+    cursor: pointer;
+}
+
+.StackListItem:hover .link {
+    z-index: 1;
+    color: black;
+}
+
+.pill {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.pill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(217, 217, 217, 0.81);
+    border-radius: 2vmin;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: visibility, opacity, transform;
+    transition-duration: .2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pill::before {
+        transition: none;
+    }
+}
+
+.StackListItem:hover > .pill::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.StackListItem:has(~ .StackListItem:hover) > .pill::before {
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+.StackListItem:hover ~ .StackListItem > .pill::before {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.StackListItem:has(~ .StackListItem + .StackListItem:hover) > .pill::before {
+    transition: none;
+}
+
+.StackListItem:hover + .StackListItem ~ .StackListItem > .pill::before {
+    transition: none;
+}

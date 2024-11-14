@@ -1,0 +1,18 @@
+.StackListPanel {
+    padding: 0;
+    border: 0;
+    /*align-content: center;*/
+
+    margin: 20vmin auto;
+    background: rgba(28, 28, 28, 0.87);
+    min-width: 10%;
+    max-width: 20%;
+    border-radius: 2vmin;
+
+    transition: transform 1s ease;
+    transform: translateX(0);
+}
+
+.StackListPanel.active {
+    transform: translateX(-60vmin);
+}

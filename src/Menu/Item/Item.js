@@ -1,6 +1,5 @@
 import s from './Item.module.css';
 import {NavLink} from 'react-router-dom';
-import React from "react";
 
 function Item(props) {
     return (
