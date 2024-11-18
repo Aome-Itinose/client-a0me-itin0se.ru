@@ -16,9 +16,10 @@
 
     width: 6.5rem;
     padding: 0.9rem 0.88rem;
+    z-index: 1;
 }
 
-.itemLink:hover {
+.Item.active .itemLink {
     color: white;
 }
 
@@ -32,7 +33,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(62, 65, 66, 0.7);
+    background-color: rgba(62, 65, 66, 0.1);
     border-radius: 15rem;
     opacity: 0;
     visibility: hidden;
@@ -91,9 +92,12 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 479px) {
+    .Item{
+        width: 8.26rem;
+    }
     .itemLink{
-        width: 13.5vw;
-        padding: 1vw 0.75vw;
+        padding: 1rem;
+        line-height: 1rem;
     }
 }
 

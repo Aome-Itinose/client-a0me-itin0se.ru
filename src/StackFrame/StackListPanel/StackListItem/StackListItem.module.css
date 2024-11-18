@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.StackListItem:hover .link {
+.StackListItem.active .link {
     z-index: 1;
     color: black;
 }
@@ -35,7 +35,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(217, 217, 217, 0.81);
+    background-color: rgba(217, 217, 217, 0.1);
     border-radius: 1.2rem;
     opacity: 0;
     visibility: hidden;
@@ -92,7 +92,7 @@
 /* Landscape phones and smaller */
 @media (max-width: 479px) {
     .StackListItem {
-        height: 3vh;
+        height: 3.5rem;
         position: relative;
 
         text-align: center;

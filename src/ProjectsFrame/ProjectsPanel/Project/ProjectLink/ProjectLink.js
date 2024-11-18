@@ -1,7 +1,6 @@
 import s from './ProjectLink.module.css';
 
 function ProjectLink({projectLink}) {
-    console.log(projectLink);
     return (
         <div className={s.ProjectLink}>
             <a href={projectLink} target={'_blank'}>
