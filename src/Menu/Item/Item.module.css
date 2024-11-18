@@ -1,5 +1,6 @@
 .Item {
     position: relative;
+    padding: 0;
 }
 
 .itemLink {
@@ -7,14 +8,14 @@
     position: relative;
 
     font-family: Arial, sans-serif;
-    font-size: 1.8vmin;
+    font-size: 1.2rem;
     text-decoration: none;
     color: black;
 
     justify-content: center;
 
-    width: 10vmin;
-    padding: 1vmin 1.5vmin;
+    width: 6.5rem;
+    padding: 0.9rem 0.88rem;
 }
 
 .itemLink:hover {
@@ -66,4 +67,37 @@
 
 .Item:hover + .Item ~ .Item > .pill::before {
     transition: none;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    .itemLink{
+        width: 13.5vw;
+        padding: 1vw 0.75vw;
+    }
+}
+
+/* Small phones */
+@media (max-width: 320px) {
+
 }

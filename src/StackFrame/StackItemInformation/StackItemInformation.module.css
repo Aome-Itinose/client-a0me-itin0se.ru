@@ -3,8 +3,8 @@
     max-height: 0;
     min-height: 0;
 
-    border-radius: 35px;
-    margin: 13vmin 0 auto 0;
+    border-radius: 1.5rem;
+    margin: 13% 0 auto 0;
 
     opacity: 0;
 
@@ -17,7 +17,7 @@
 .StackItemInformation.active{
 
     max-height: fit-content;
-    min-height: 50vmin;
+    min-height: 50vh;
     opacity: 1;
 
     margin: 0;
@@ -28,7 +28,7 @@
     position:absolute;
 
     max-width: 60%;
-    min-height: 50vmin;
+    min-height: 50vh;
 
     margin: 5% -25% auto auto;
     z-index: -1;
@@ -36,21 +36,50 @@
 
 
 .TechName {
-    font-size: 3vmin;
+    font-size: 2rem;
     text-align: center;
-    padding-top: 1vmin;
+    padding-top: 1rem;
 
     margin: 0;
 }
 
 .TechDescription {
-    font-size: 2vmin;
-    line-height: 3vmin;
+    font-size: 1.4rem;
+    line-height: 2rem;
 
-    padding: 3vmin;
+    padding: 2rem;
     margin: 0;
 }
 
 .StackItemInformation p{
     opacity: 1;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    .StackItemInformation.active{
+        margin: 10% auto auto auto;
+        min-height: 30vh;
+    }
+}
+
+/* Small phones */
+@media (max-width: 320px) {
 }

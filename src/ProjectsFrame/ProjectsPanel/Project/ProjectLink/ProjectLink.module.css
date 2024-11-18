@@ -1,21 +1,21 @@
 .ProjectLink {
     display: inline-block;
-    width: 11vmin;
-    height: 3.8vmin;
-    margin: 1.2vmin 3vmin auto auto;
+    width: 9rem;
+    height: 3rem;
+    margin: 1.2% 3% auto auto;
     align-content: center;
 
-    border-radius: 20px;
+    border-radius: 2rem;
 
     background-color: rgba(60, 60, 60, 0.89);
 }
 
 .ProjectLink img{
     float: left;
-    width: 3vmin;
-    margin-left: 0.3vmin;
-    margin-top: 0.4vmin;
-    border-radius: 40px;
+    width: 2.4rem;
+    margin-left: 3%;
+    margin-top: 3%;
+
 }
 .ProjectLink a{
     text-decoration: none;
@@ -24,9 +24,38 @@
 .ProjectLink p{
     position: relative;
     font-family: "Inter";
-    font-size: 1.7vmin;
+    font-size: 1.1rem;
     color: rgba(230, 230, 230, 1);
-    margin-top: 0.8vmin;
-    margin-left: 4vmin;
-    /*text-align: center;*/
+    line-height: 0.9rem;
+    margin-left: 37%;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    .ProjectLink{
+        width: 30%;
+        height: 70%;
+        margin: 3% 3% auto auto;
+        align-content: center;
+    }
+}
+
+/* Small phones */
+@media (max-width: 320px) {
 }
