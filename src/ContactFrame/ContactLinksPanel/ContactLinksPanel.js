@@ -1,6 +1,5 @@
 import s from './ContactLinksPanel.module.css';
 import ContactLinkItem from "./ContactLinkItem/ContactLinkItem";
-import {useState} from "react";
 
 const ContactLinksPanel = ({links}) => {
     return (
