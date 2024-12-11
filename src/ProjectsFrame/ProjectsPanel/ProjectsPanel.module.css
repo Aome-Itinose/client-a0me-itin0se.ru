@@ -6,6 +6,10 @@
     padding: 1%;
 }
 
+.ErrorMessage{
+     color: red;
+     text-align: center;
+ }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {

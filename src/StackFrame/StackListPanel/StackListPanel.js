@@ -3,16 +3,13 @@ import StackListItem from "./StackListItem/StackListItem";
 
 import React from 'react';
 
-function StackListPanel({innerRef, stackList, activeElementIndex, setActiveElementIndex}) {
-
-
+function StackListPanel({innerRef, technologies, activeElementIndex, setActiveElementIndex, error, loading}) {
     const handleItemClick = (index) => {
         setActiveElementIndex(index);
     }
-
     const pillStyles = () => {
-        if(activeElementIndex !== null) {
-            if(window.matchMedia("(max-width: 479px)").matches) {
+        if (activeElementIndex !== null) {
+            if (window.matchMedia("(max-width: 479px)").matches) {
                 return {
                     top: `${activeElementIndex * 3.5}rem`
                 }
@@ -20,24 +17,34 @@ function StackListPanel({innerRef, stackList, activeElementIndex, setActiveEleme
             return {
                 top: `${activeElementIndex * 2.5}rem`
             }
-        }else{
+        } else {
             return {
                 hidden: "true"
             }
         }
     }
 
+    let printErrorMessage = () => {
+        return <h1 className={s.ErrorMessage}>{error.message}</h1>
+    }
+
+    let printTechnologies = () => {
+        return <>
+            <span className={`${s.pill} ${activeElementIndex !== null ? s.active : ''}`} aria-hidden={true}
+                  style={pillStyles()}></span>
+            {technologies.map((item, index) =>
+                <StackListItem
+                    key={index}
+                    technologyName={item.shortName}
+                    isActive={activeElementIndex === index}
+                    onClick={() => handleItemClick(index)}/>
+            )}
+        </>
+    }
 
     return (
         <div ref={innerRef} className={`${s.StackListPanel} ${activeElementIndex !== null ? s.active : ""}`}>
-            <span className={`${s.pill} ${activeElementIndex !== null ? s.active : ''}`} aria-hidden={true} style={pillStyles()}></span>
-            {stackList.map((item, index) =>
-                <StackListItem
-                    key={index}
-                    stackItem={item}
-                    isActive={activeElementIndex === index}
-                    onClick={() => handleItemClick(index)} />
-            )}
+            {error == null ? printTechnologies() : printErrorMessage()}
         </div>
     );
 }

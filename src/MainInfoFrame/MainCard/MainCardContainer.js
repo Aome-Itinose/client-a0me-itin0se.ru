@@ -6,6 +6,7 @@ const mapStateToProps = (state) => {
         imagePath: state.profilePage.profile.imagePath,
         fullName: state.profilePage.profile.fullName,
         aboutMe: state.profilePage.profile.aboutMe,
+        error: state.profilePage.error,
     }
 }
 

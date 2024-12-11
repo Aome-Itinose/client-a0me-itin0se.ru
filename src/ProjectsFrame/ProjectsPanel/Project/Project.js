@@ -4,13 +4,15 @@ import ProjectLink from "./ProjectLink/ProjectLink";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import ProjectStack from "./ProjectStack/ProjectStack";
 
-function Project({projectData}) {
+function Project({project}) {
+    // console.log(project)
+    // debugger
     return (
         <div className={s.Project}>
-            <ProjectName projectName={projectData.name}/>
-            <ProjectLink projectLink={projectData.link}/>
-            <ProjectStack projectStackList={projectData.stack}/>
-            <ProjectDescription projectDescription={projectData.description}/>
+            <ProjectName projectName={project.name}/>
+            <ProjectLink projectLink={project.gitHubLink}/>
+            <ProjectStack projectStackList={project.technologies}/>
+            <ProjectDescription projectDescription={project.description}/>
 
         </div>
     );

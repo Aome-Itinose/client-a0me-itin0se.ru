@@ -10,6 +10,11 @@
     background-color: rgba(60, 60, 60, 0.89);
 }
 
+.ProjectLink:hover{
+    background-color: rgba(100, 100, 100, 0.99);
+    cursor: pointer;
+}
+
 .ProjectLink img{
     float: left;
     width: 2.4rem;
