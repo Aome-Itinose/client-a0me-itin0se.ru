@@ -1,21 +1,21 @@
 import './App.css';
-import ContactFrame from './ContactFrame/ContactFrame';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Menu from './Menu/Menu';
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import MainInfoFrameContainer from "./MainInfoFrame/MainInfoFrameContainer";
 import ProjectsFrameContainer from "./ProjectsFrame/ProjectsFrameContainer";
 import StackFrameContainer from "./StackFrame/StackFrameContainer";
+import ContactFrameContainer from "./ContactFrame/ContactFrameContainer";
+import MenuContainer from "./Menu/MenyContainer";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Menu/>
+                <MenuContainer/>
                 <Routes>
                     <Route path="/profile" element={<MainInfoFrameContainer/>}/>
-                    <Route path="/" element={<MainInfoFrameContainer/>}/>
+                    <Route path="/" element={<Navigate to="/profile" replace />} />
                     <Route path="/projects" element={<ProjectsFrameContainer/>}/>
-                    <Route path="/contact" element={<ContactFrame/>}/>
+                    <Route path="/contact" element={<ContactFrameContainer/>}/>
                     <Route path="/stack" element={<StackFrameContainer/>}/>
                 </Routes>
 

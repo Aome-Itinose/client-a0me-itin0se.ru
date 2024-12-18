@@ -5,15 +5,13 @@ import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import ProjectStack from "./ProjectStack/ProjectStack";
 
 function Project({project}) {
-    // console.log(project)
-    // debugger
+
     return (
         <div className={s.Project}>
             <ProjectName projectName={project.name}/>
             <ProjectLink projectLink={project.gitHubLink}/>
             <ProjectStack projectStackList={project.technologies}/>
             <ProjectDescription projectDescription={project.description}/>
-
         </div>
     );
 }

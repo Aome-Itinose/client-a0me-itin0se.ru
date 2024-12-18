@@ -1,11 +1,11 @@
 import s from './ContactLinksPanel.module.css';
 import ContactLinkItem from "./ContactLinkItem/ContactLinkItem";
 
-const ContactLinksPanel = ({links}) => {
+const ContactLinksPanel = (props) => {
     return (
         <div className={s.ContactLinksPanel}>
-            {links.map((link, index) => (
-                <ContactLinkItem key={index} linkDetails={link} />
+            {props.contacts.map((item, index) => (
+                <ContactLinkItem key={index} linkDetails={item} />
             ))}
         </div>
     );

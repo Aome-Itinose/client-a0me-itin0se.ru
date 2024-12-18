@@ -10,6 +10,11 @@
     /*background-color: azure;*/
     /*border: black 1px solid;*/
     border-radius: 2vmin;
+
+}
+
+.ContactLinkItem:hover{
+    cursor: pointer;
 }
 
 .ContactLinkItem a{

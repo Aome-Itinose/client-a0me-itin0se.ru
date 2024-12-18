@@ -1,5 +1,4 @@
 import s from './MainInfoFrame.module.css';
-import MainCard from "./MainCard/MainCard";
 import {useEffect} from "react";
 import MainCardContainer from "./MainCard/MainCardContainer";
 import Loading from "../util/Loading/Loading";

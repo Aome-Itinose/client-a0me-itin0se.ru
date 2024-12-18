@@ -10,11 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const renderApp = () => {
     root.render(
-        <React.StrictMode>
-            <Provider store={store}>
-                <App/>
-            </Provider>
-        </React.StrictMode>
+        <Provider store={store}>
+            <App/>
+        </Provider>
     );
 }
 
@@ -22,9 +20,6 @@ renderApp(store);
 store.subscribe(() => {
     renderApp();
 });
-
-//Todo: delete
-window.store = store;
 
 
 // If you want to start measuring performance in your app, pass a function

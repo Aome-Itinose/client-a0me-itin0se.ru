@@ -7,7 +7,7 @@ import {setError, setLoading, setProjects} from "../redux/ProjectsReducer";
 let fetchProjects = () => {
     return (dispatch) => {
         dispatch(setLoading(true));
-        axios.get(`${config.API_BASE_URL}projects/`).then((response) => {
+        axios.get(`${config.API_BASE_URL}/projects`).then((response) => {
             dispatch(setProjects(response.data));
         }).catch((error) => {
             dispatch(setError(error.status, error.response.data.message));
